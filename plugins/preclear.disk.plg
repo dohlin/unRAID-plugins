@@ -392,7 +392,7 @@ fi
 gcc_version=$(cat /proc/version|grep -Po 'gcc version \K[\d.]*')
 
 case $gcc_version in
-  '7.2.0')
+  '7.2.0'|'7.3.0')
     download_install ncurses-6.0-x86_64-3.txz c04358fd7d7cb0b5ca67f215871f3692
     download_install libevent-2.1.8-x86_64-1.txz 9ba9d61dcd90d45719d27b9e7a111913
     download_install tmux-2.5-x86_64-1.txz a48783401331620b7c7e5d7af58f53db
